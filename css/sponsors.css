@@ -1,0 +1,61 @@
+@font-face {
+    font-family: roboto-thin;
+    src: url(../fonts/roboto-thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/roboto-light.ttf);
+}
+
+.title-head {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3.418rem;
+    padding-top: 8%;
+    text-align: center;
+    color: white;
+}
+
+.row {
+    padding: 20px;
+}
+
+.col-xs-12 {
+    padding: 20px;
+}
+
+.sponsor-image img {
+    height: 100px;
+    max-width: 200px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.sponsor-image img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.sponsor-type {
+    font-size: 20px;
+    height: 40px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center !important;
+}
+
+.enlarge {
+    height: 150px !important;
+}
+
+
+@media (max-width: 720px) {
+    .sponsor-type {
+        height: auto;
+    }
+}

@@ -1,0 +1,29 @@
+.photection-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: none;
+  transition: opacity 500ms ease; }
+  .photection-modal.is-active {
+    display: block; }
+
+.photection__message-wrapper {
+  position: absolute;
+  z-index: 5000;
+  padding: 0.5rem 0.75rem;
+  min-width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background-color: black;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer; }

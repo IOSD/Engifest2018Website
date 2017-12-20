@@ -1,0 +1,115 @@
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.teamGrid {
+    font-size: 0;
+    margin: 80px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.teamMember {
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    padding: 2%;
+
+}
+
+.teamMember .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+.teamMember .text {
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+}
+
+.teamMember .text .name, .teamMember .text .role {
+    font-family: 'Flama-Light',helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: #fff;
+}
+
+.teamMember .text .name {
+    font-family: 'Flama-Bold',helvetica, arial, sans-serif;
+    line-height: 26px;
+}
+
+.teamMember .text .role {
+    line-height: 20px;
+    font-size: 10px;
+}
+
+.teamMember a {
+    text-decoration: none;
+    -webkit-transition: none;
+    transition: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 117.62917933%;
+    background: #000;
+    overflow: hidden;
+    display: block;
+}
+
+.teamMember a:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.teamMember a:hover .image {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.teamMember .desc {
+    z-index: 1000;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: -o-calc(100% - 5px);
+    left: calc(100% - 5px);
+    background: #fff;
+    width: 100%;
+    height: -o-calc(100% - 10px);
+    height: calc(100% - 10px);
+    padding: 1.5em;
+    border: 2px solid #ac2eff;
+}
